@@ -1,0 +1,32 @@
+<!--LISTADO_PRODUCTOS-->
+<div class="m-3 p-3" style="width: 520px;  float:left;">
+    <input type="hidden" value="{imagenes}" id="{id}" class="hidden_images">
+    <div class="card">
+        <div class="centrado card-header bg-success" >
+            <h5>{producto}</h5>
+        </div>
+        <div class="card-body shadow rounded"   >
+            <div class="row"  style="height:250px;" >
+                <div class="col-xs-12 col-sm-4">
+                    <h6>{descripcion}</h6>
+                </div>
+                <div class="col-xs-12  col-sm-8 images" id ="divImages_{id}">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12  col-sm-4 centrado">
+                    <strong>Precio unitario</strong><br> <h4>${precio}</h4> 
+                </div>
+                <div class="col-xs-12  col-sm-8 derecho">
+                    <strong>Cantidad: </strong><input class="cantidades" type="number" id="cantidad_{id}" value="1" />
+                    <a href="/artesanias/pedido/agregar"> <img src="/static/img/" alt ="">
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!--LISTADO_PRODUCTOS-->
+<script src="/static/js/productos_listar.js"></script>
